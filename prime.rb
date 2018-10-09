@@ -3,9 +3,8 @@ def prime?(integer)
   if integer == 2
     return true
   elsif integer > 2
-    range.each do |number|
-      if integer % number < 0
-        return true
+    range.all? do |number|
+      if integer % number != 0
       end
     end
   else
