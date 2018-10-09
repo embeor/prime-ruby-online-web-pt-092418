@@ -6,11 +6,9 @@ def prime?(integer)
     range.each do |number|
       if integer % number < 0
         return true
-        true
       end
     end
   else
     return false
-    false
   end
 end
